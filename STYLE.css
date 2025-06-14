@@ -659,11 +659,13 @@ a:hover .tooltip,
 .resume, .portfolio {
   padding-top: 1.5rem;
   padding-bottom: 27rem;
+    padding-left: 8px;
 }
 
 .contact {
   padding-top: 1.5rem;
   padding-bottom: 18rem;
+    padding-left: 8px;
 }
 
 @media screen and (max-width: 768px) {
@@ -681,7 +683,7 @@ a:hover .tooltip,
     justify-content: center;
     gap: 2rem;
     padding-bottom: 6rem;
-      padding-left: 8px;
+    padding-left: 8px;
   }
 
   .about {
