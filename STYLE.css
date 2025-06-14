@@ -694,10 +694,14 @@ a:hover .tooltip,
 
   .resume, .portfolio {
     padding-bottom: 25rem;
+      padding-left: 8px;
+      padding-right: 8px;
   }
 
   .contact {
     padding-bottom: 16rem;
+       padding-left: 8px;
+      padding-right: 8px;
   }
 }
 
