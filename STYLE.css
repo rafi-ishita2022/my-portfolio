@@ -641,62 +641,79 @@ a:hover .tooltip,
   border-radius: .6rem;
 }
 
-/* ছোট স্ক্রিন (মোবাইল) জন্য */
-@media only screen and (max-width: 768px) {
+/* BREAKPONTS */
+
+@media screen and (max-width: 1200px) {
   html {
-    font-size: 55%;  /* ফন্ট একটু ছোট হবে */
-  }
-  .nav {
-    width: 90vw;
-    padding: 1rem 0;
-    bottom: 1rem;
-    border-radius: 3rem;
-  }
-  .nav .nav-list {
-    gap: 1.5rem;
-  }
-  .nav-list li {
-    font-size: 2.5rem;
-  }
-
-  .container, .box {
-    perspective-origin: 50% 50%;
-  }
-
-  .section {
-    padding: 0 5%;
-  }
-
-  .home, .about {
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 2rem;
-  }
-
-  .img-box {
-    width: 60vw;
-    height: 60vw;
-    border-width: 0.3rem;
-  }
-
-  .home-info h2 {
-    font-size: 2.8rem;
-  }
-  .home-info h3 {
-    font-size: 2rem;
-  }
-
-  .tab-grid {
-    grid-template-columns: 1fr !important; /* এক কলামে সব আইটেম */
-  }
-
-  .contact-form {
-    width: 90vw;
+    font-size: 55%;
   }
 }
 
-/* আরো ছোট স্ক্রিনের জন্য (ছোট মোবাইল) */
- @media screen and (max-width: 400px) {
+@media screen and (max-width: 992px) {
+  .section {
+    padding: 0.4%;
+  }
+}
+
+.resume, .portfolio {
+  padding-top: 1.5rem;
+  padding-bottom: 27rem;
+}
+
+.contact {
+  padding-top: 1.5rem;
+  padding-bottom: 18rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav {
+    bottom: 0;
+  }
+
+  .home,
+  .about {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .img-box {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .resume, .portfolio {
+    padding-bottom: 25rem;
+  }
+
+  .contact {
+    padding-bottom: 16rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .resume, .portfolio {
+    padding-top: 1rem;
+    padding-bottom: 22rem;
+  }
+  .tab-box{
+    margin-top: 0;
+  }
+  .contact {
+    padding-top: 1rem;
+  }
+  }
+
+  @media screen and (max-width: 400px) {
     .nav {
       width: 100%;
       border-radius: 0;
@@ -729,5 +746,4 @@ a:hover .tooltip,
       text-align: center;
     }
   }
-
   
