@@ -1,0 +1,106 @@
+/* Basic Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Landing Section */
+.landing-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #373030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.circle-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid rgb(0, 255, 187);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 5s infinite linear; /* rotate animation applied to circle */
+}
+
+.profile-photo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #7d5555;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgb(0, 255, 187);
+  z-index: 10;
+  /* No rotate animation, so photo stays fixed */
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid rgb(0, 255, 187);
+}
+
+.triangle1 {
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.triangle2 {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.triangle3 {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.triangle4 {
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.welcome-message {
+  margin-top: 15px;
+  font-size: 1em;
+  color: rgb(0, 255, 187);
+  opacity: 0;
+  animation: fadeIn 3s 2s forwards; /* Welcome text fade-in after 2s */
+}
+
+    /* Animations */
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1; /* Fade-in effect */
+      }
+    }
