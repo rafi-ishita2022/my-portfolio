@@ -714,37 +714,36 @@ a:hover .tooltip,
   }
 
   @media screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+
   .nav {
-    width: 100%;
-    border-radius: 0;
+    bottom: 0;
   }
 
-  .home-info,
-  .about-info {
-    text-align: center;
-  }
-
-  .home-info h1 {
-    font-size: 3rem; /* ছোট করে দিলাম */
-  }
-
-  .home-info .btn-sci {
-    display: flex; /* flex যোগ করা */
+  .home,
+  .about {
     flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 6rem;
   }
 
-  .home-info .btn-sci .sci {
-    margin-left: 0;
-    margin-bottom: 2rem;
+  .about {
+    flex-direction: column;
   }
 
   .img-box {
-    width: 90vw; /* স্ক্রীন অনুযায়ী */
-    height: auto;
-    max-width: 30rem;
+    width: 35rem;
+    height: 35rem;
   }
 
-  .about-info .title {
-    text-align: center;
+  .resume, .portfolio {
+    padding-bottom: 25rem;
+  }
+
+  .contact {
+    padding-bottom: 16rem;
   }
 }
