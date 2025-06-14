@@ -681,6 +681,7 @@ a:hover .tooltip,
     justify-content: center;
     gap: 2rem;
     padding-bottom: 6rem;
+      padding-left: 8px;
   }
 
   .about {
