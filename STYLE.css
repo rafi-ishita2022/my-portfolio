@@ -680,6 +680,7 @@ a:hover .tooltip,
     justify-content: center;
     gap: 2rem;
     padding-bottom: 6rem;
+    padding-left: 10px;
   }
 
   .about {
@@ -699,4 +700,19 @@ a:hover .tooltip,
     padding-bottom: 16rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .resume, 
+  .portfolio {
+    padding-top: 1rem;
+    padding-bottom: 22rem;
+    padding-left: 10px;
+  }
+  .tab-box{
+    margin-top: 0;
+  }
+  .contact {
+    padding-top: 1rem;
+  }
+  }
 
