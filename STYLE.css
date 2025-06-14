@@ -640,4 +640,76 @@ a:hover .tooltip,
   cursor: pointer;
   border-radius: .6rem;
 }
+
+/* ছোট স্ক্রিন (মোবাইল) জন্য */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 55%;  /* ফন্ট একটু ছোট হবে */
+  }
+  .nav {
+    width: 90vw;
+    padding: 1rem 0;
+    bottom: 1rem;
+    border-radius: 3rem;
+  }
+  .nav .nav-list {
+    gap: 1.5rem;
+  }
+  .nav-list li {
+    font-size: 2.5rem;
+  }
+
+  .container, .box {
+    perspective-origin: 50% 50%;
+  }
+
+  .section {
+    padding: 0 5%;
+  }
+
+  .home, .about {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .img-box {
+    width: 60vw;
+    height: 60vw;
+    border-width: 0.3rem;
+  }
+
+  .home-info h2 {
+    font-size: 2.8rem;
+  }
+  .home-info h3 {
+    font-size: 2rem;
+  }
+
+  .tab-grid {
+    grid-template-columns: 1fr !important; /* এক কলামে সব আইটেম */
+  }
+
+  .contact-form {
+    width: 90vw;
+  }
+}
+
+/* আরো ছোট স্ক্রিনের জন্য (ছোট মোবাইল) */
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  .nav-list li {
+    font-size: 2rem;
+  }
+  .img-box {
+    width: 80vw;
+    height: 80vw;
+  }
+  .home-info h2 {
+    font-size: 2rem;
+  }
+}
+
   
