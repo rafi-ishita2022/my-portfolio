@@ -757,6 +757,10 @@ a:hover .tooltip,
         font-size: 1rem;
       }
 
+      about-info h2{
+      font-size: 3rem;
+      }
+
     .about-info .title {
       text-align: left;
     }
