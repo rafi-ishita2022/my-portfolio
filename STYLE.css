@@ -745,6 +745,7 @@ a:hover .tooltip,
     .home-info .btn-sci .sci {
       margin-left: 0;
       margin-bottom: 2rem;
+      font-size: 1rem;
     }
 
     .img-box {
