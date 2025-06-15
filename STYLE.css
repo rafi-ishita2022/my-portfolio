@@ -681,6 +681,7 @@ a:hover .tooltip,
     gap: 2rem;
     padding-bottom: 6rem;
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   .about {
@@ -698,6 +699,8 @@ a:hover .tooltip,
 
   .contact {
     padding-bottom: 16rem;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -707,6 +710,7 @@ a:hover .tooltip,
     padding-top: 1rem;
     padding-bottom: 22rem;
     padding-left: 10px;
+    padding-right: 10px;
   }
   .tab-box{
     margin-top: 0;
