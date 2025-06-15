@@ -751,11 +751,16 @@ font-size: 2.5rem;
 }
 
   .btn-sci {
-    font-size: 1rem;
+   font-size: 1rem;
+   gap: 3rem;
   }
 
   .about-info h2{
   font-size: 3rem;
+  }
+
+.btn-sci .btn {
+      transform: translateY(-10px); /* এই মান পরিবর্তন করে উচ্চতা ঠিক করুন */
   }
 
 .about-info .title {
