@@ -737,9 +737,7 @@ font-size: 3rem;
 font-size: 2.5rem;
 }
 
-.home-info .btn-sci {
-  flex-direction: column-reverse;
-}
+
 
 .home-info .btn-sci .sci {
   margin-left: 0;
@@ -756,7 +754,7 @@ font-size: 2.5rem;
     font-size: 1rem;
   }
 
-  about-info h2{
+  .about-info h2{
   font-size: 3rem;
   }
 
