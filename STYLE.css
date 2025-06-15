@@ -727,7 +727,7 @@ a:hover .tooltip,
   
     .home-info,
     .about-info {
-      text-align: center;
+      text-align: left;
     }
   
     .home-info h1 {
