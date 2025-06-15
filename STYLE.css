@@ -727,11 +727,15 @@ a:hover .tooltip,
   
     .home-info,
     .about-info {
-      text-align: left;
+    text-align: left;
     }
   
     .home-info h2 {
-      font-size: 2rem;
+    font-size: 3rem;
+    }
+      
+    .home-info h3 {
+    font-size: 2.5rem;
     }
   
     .home-info .btn-sci {
