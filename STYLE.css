@@ -719,50 +719,43 @@ a:hover .tooltip,
     padding-top: 1rem;
   }
 
-  @media screen and (max-width: 400px) {
-    .nav {
-      width: 100%;
-      border-radius: 0;
-    }
-  
-    .home-info,
-    .about-info {
-    text-align: left;
-    }
-  
-    .home-info h2 {
-    font-size: 3rem;
-    }
-      
-    .home-info h3 {
-    font-size: 2.5rem;
-    }
-  
-    .home-info .btn-sci {
-      flex-direction: column-reverse;
-    }
-
-    .home-info .btn-sci .sci {
-      margin-left: 0;
-      margin-bottom: 2rem;
-      font-size: 1rem;
-    }
-
-    .img-box {
-      width: 28rem;
-      height: 28rem;
-    }
-
-      .btn-sci {
-        font-size: 1rem;
-      }
-
-      about-info h2{
-      font-size: 3rem;
-      }
-
-    .about-info .title {
-      text-align: left;
-    }
+ @media screen and (max-width: 400px) {
+  .nav {
+    width: 100%;
+    border-radius: 0;
   }
-  
+
+  .home-info,
+  .about-info {
+    /* ছোট স্ক্রিনে একটি কলাম থাকলে সেন্টারে দেখতে ভালো লাগে */
+    text-align: center; 
+  }
+
+  .home-info h2 {
+    font-size: 3rem;
+  }
+    
+  .home-info h3 {
+    font-size: 2.5rem;
+  }
+
+  /* 
+   * .btn-sci এবং .sci এর স্টাইল মিডিয়া কোয়েরি থেকে সরিয়ে দেওয়া হয়েছে,
+   * কারণ আমরা চাই এগুলো সব স্ক্রিনেই এক লাইনে থাকুক।
+   * flex-direction: column-reverse; লাইনটিই মূল সমস্যা ছিল।
+   */
+
+  .img-box {
+    width: 28rem;
+    height: 28rem;
+  }
+
+  /* এখানে একটি '.' মিসিং ছিল, সেটি যোগ করা হয়েছে */
+  .about-info h2 {
+    font-size: 3rem;
+  }
+
+  .about-info .title {
+    text-align: center; /* এটিও সেন্টারে রাখলে ভালো দেখাবে */
+  }
+}
