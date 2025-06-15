@@ -719,43 +719,52 @@ a:hover .tooltip,
     padding-top: 1rem;
   }
 
- @media screen and (max-width: 400px) {
-  .nav {
-    width: 100%;
-    border-radius: 0;
-  }
+@media screen and (max-width: 400px) {
+    .nav {
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .home-info,
+    .about-info {
+      text-align: center; /* পাশাপাশি রাখলে text-align: center দেখতে ভালো লাগবে */
+    }
+  
+    .home-info h2 {
+      font-size: 3rem;
+    }
+      
+    .home-info h3 {
+      font-size: 2.5rem;
+    }
+  
+    .home-info .btn-sci {
+      /* flex-direction: column-reverse; */ /* <-- এই লাইনটিই মূল সমস্যা ছিল, তাই এটি মুছে ফেলা হয়েছে */
+      /* আপনি চাইলে ছোট স্ক্রিনের জন্য গ্যাপ কমাতে পারেন */
+      gap: 1.5rem; 
+    }
 
-  .home-info,
-  .about-info {
-    /* ছোট স্ক্রিনে একটি কলাম থাকলে সেন্টারে দেখতে ভালো লাগে */
-    text-align: center; 
-  }
+    .home-info .btn-sci .sci {
+      margin-left: 0;
+      /* margin-bottom: 2rem; */ /* <-- এটিও আর প্রয়োজন নেই */
+      font-size: 1rem;
+    }
 
-  .home-info h2 {
-    font-size: 3rem;
-  }
-    
-  .home-info h3 {
-    font-size: 2.5rem;
-  }
+    .img-box {
+      width: 28rem;
+      height: 28rem;
+    }
 
-  /* 
-   * .btn-sci এবং .sci এর স্টাইল মিডিয়া কোয়েরি থেকে সরিয়ে দেওয়া হয়েছে,
-   * কারণ আমরা চাই এগুলো সব স্ক্রিনেই এক লাইনে থাকুক।
-   * flex-direction: column-reverse; লাইনটিই মূল সমস্যা ছিল।
-   */
+    .btn-sci {
+      font-size: 1rem;
+    }
 
-  .img-box {
-    width: 28rem;
-    height: 28rem;
-  }
+    /* এখানে একটি '.' মিসিং ছিল, সেটি যোগ করা হয়েছে */
+    .about-info h2 { 
+      font-size: 3rem;
+    }
 
-  /* এখানে একটি '.' মিসিং ছিল, সেটি যোগ করা হয়েছে */
-  .about-info h2 {
-    font-size: 3rem;
-  }
-
-  .about-info .title {
-    text-align: center; /* এটিও সেন্টারে রাখলে ভালো দেখাবে */
-  }
+    .about-info .title {
+      text-align: center; /* এটিও সেন্টারে রাখলে ভালো দেখাবে */
+    }
 }
