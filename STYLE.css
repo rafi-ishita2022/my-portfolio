@@ -752,6 +752,10 @@ a:hover .tooltip,
       height: 28rem;
     }
 
+      .btn-sci {
+        font-size: 3rem;
+      }
+
     .about-info .title {
       text-align: left;
     }
