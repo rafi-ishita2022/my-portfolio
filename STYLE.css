@@ -703,7 +703,7 @@ a:hover .tooltip,
   .contact {
     padding-bottom: 16rem;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 8px;
   }
 }
 
@@ -713,7 +713,7 @@ a:hover .tooltip,
     padding-top: 1rem;
     padding-bottom: 5rem;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 8px;
   }
   .tab-box{
     margin-top: 0;
