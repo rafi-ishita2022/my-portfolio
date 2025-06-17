@@ -707,7 +707,7 @@ a:hover .tooltip,
   .resume, 
   .portfolio {
     padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     padding-left: 10px;
     padding-right: 8px;
   }
@@ -745,8 +745,8 @@ font-size: 2.5rem;
 }
 
 .img-box {
-  width: 28rem;
-  height: 28rem;
+  width: 25rem;
+  height: 25rem;
 }
 
   .btn-sci {
