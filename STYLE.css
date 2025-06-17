@@ -276,6 +276,7 @@ a:hover .tooltip,
   
   .img-box img {
     width: 60%;
+    min-width: 75%;
     height: 100%;
     position: absolute;
     display: block;
