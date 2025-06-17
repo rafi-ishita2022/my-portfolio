@@ -263,7 +263,6 @@ a:hover .tooltip,
     width: 28vw;
     height: 28vw;
     background: linear-gradient(var(--bg-color), var(--main-color));
-    top: 3rem;
     border: 0.5rem solid var(--main-color);
     box-shadow: 0 0 2rem var(--main-color);
     display: flex;
