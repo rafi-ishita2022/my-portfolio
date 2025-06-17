@@ -758,9 +758,7 @@ font-size: 2.5rem;
   font-size: 3rem;
   }
 
-.btn-sci .btn {
-      transform: translateY(-8px); /* এই মান পরিবর্তন করে উচ্চতা ঠিক করুন */
-  }
+
 
 .about-info .title {
   text-align: left;
