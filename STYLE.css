@@ -710,11 +710,15 @@ a:hover .tooltip,
     padding-left: 10px;
     padding-right: 8px;
   }
+  .resume, .portfolio {
+  padding-top: 1.5rem;
+  padding-bottom: 25rem;
+}
   .tab-box{
     margin-top: 0;
   }
   .contact {
-    padding-top: 1rem;
+   padding-top: 1rem;
   }
 
 @media screen and (max-width: 400px) {
@@ -733,11 +737,6 @@ font-size: 3rem;
   
 .home-info h3 {
 font-size: 2.5rem;
-}
-
-.resume, .portfolio {
-  padding-top: 1.5rem;
-  padding-bottom: 27rem;
 }
 
 .home-info .btn-sci .sci {
